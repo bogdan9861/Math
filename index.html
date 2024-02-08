@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Главная</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="score">
+            очки:&nbsp <span id="counter">0</span>
+        </div>
+        <div class="best">
+            рекорд:&nbsp <span id="bestCounter">0</span>
+        </div>
+        <div class="rankWrapp">
+            ранг:&nbsp <span id="rank">Новичок</span>
+            <img id="rank-img" src="" alt="">
+        </div>
+        <p class="true_text" id="true_text">Правильно!</p>
+        <p class="false_text" id="false_text">не правильно!</p>
+        <div class="nums" id="nums">
+            <span class="first__num" id="first_num">0</span>
+            <span class="sign" id="sign">+</span>
+            <span class="second__num" id="second_num">0</span>
+            <span class="equal" id="equal">=<span id="equal_value"> ?</span></span>
+        </div>
+        <span class="loseScore-wrapper hide">Вы набрали: <span id="loseScore">0</span></span>
+        <div class="inp-wrap" id="inp-wrap">
+            <input class="input" type="text" id="input" placeholder="Введите ответ:" value="" autocomplete="off">
+            <button class="submit">готово</button>
+        </div>
+        <button class="restart" id="restart">
+            <svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M152 77C152 118.421 118.421 152 76.9999 152C35.5785 152 1.99988 118.421 1.99988 77C1.99988 35.5787 35.5785 2.00001 76.9999 2.00001C118.421 2.00001 152 35.5787 152 77ZM5.71008 77C5.71008 116.372 37.6276 148.29 76.9999 148.29C116.372 148.29 148.29 116.372 148.29 77C148.29 37.6277 116.372 5.71021 76.9999 5.71021C37.6276 5.71021 5.71008 37.6277 5.71008 77Z"
+                    fill="white" />
+                <path class="arrow"
+                    d="M44.4864 32.6393C37.6349 37.661 32.0397 44.2015 28.1395 51.7481C24.2393 59.2946 22.1402 67.642 22.0067 76.1357C21.8732 84.6295 23.709 93.0387 27.3701 100.704C31.0312 108.369 36.4181 115.083 43.1084 120.317C49.7988 125.552 57.6107 129.165 65.9317 130.875C74.2527 132.584 82.8566 132.343 91.0688 130.17C99.281 127.997 106.878 123.952 113.265 118.35C119.651 112.749 124.654 105.745 127.88 97.8865L123.92 96.2608C120.945 103.508 116.332 109.967 110.442 115.132C104.553 120.297 97.5468 124.028 89.9738 126.032C82.4008 128.036 74.4666 128.258 66.7932 126.682C59.1199 125.105 51.916 121.773 45.7463 116.946C39.5767 112.118 34.6091 105.928 31.2329 98.8591C27.8568 91.7903 26.1639 84.0356 26.287 76.203C26.4101 68.3703 28.3458 60.6727 31.9425 53.7135C35.5391 46.7544 40.6988 40.7229 47.0171 36.092L44.4864 32.6393Z"
+                    fill="white" />
+                <path d="M39.9435 27.7313L57.2606 24.9375L50.4301 41.7926L39.9435 27.7313Z" fill="white" />
+            </svg>
+        </button>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

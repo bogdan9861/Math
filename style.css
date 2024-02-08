@@ -1,0 +1,186 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+.LoadScreen {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    background-color: rgb(66, 192, 83);
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.LoadScreen.LoadScreen--ready {
+    top: 0;
+}
+
+.LoadScreen__text {
+    position: absolute;
+    top: 50%;
+    left: calc(50vw - 120px);
+    font-size: 26px;
+}
+
+.true_text,
+.false_text {
+    font-size: 35px;
+    line-height: 43px;
+    color: #fff;
+    transition: all 0.4s;
+    transform: translateY(-300vh);
+}
+
+.true_text.active {
+    transform: translateY(0);
+}
+
+.false_text.active {
+    transform: translateY(0);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nums {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.input {
+    max-width: 428px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+}
+
+.inp-wrap {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.inp-wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.restart {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.score {
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    font-size: 20px;
+    color: #000;
+}
+
+.best {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+    font-size: 20px;
+    color: #000;
+}
+
+.rankWrapp {
+    position: absolute;
+    top: 55px;
+    right: 10%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.rankWrapp span {
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.rankWrapp img {
+    width: 25px;
+    color: rgb(16, 6, 71);
+}
+
+.submit {
+    border: none;
+    color: #fff;
+    background: rgb(29, 30, 28);
+    padding: 7px;
+    border-radius: 3px;
+    font-family: inherit;
+    display: inline-block;
+    width: 90px;
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+
+.loseScore-wrapper {
+    font-size: 23px;
+    font-weight: 500;
+    color: #000;
+    padding-bottom: 88px;
+    opacity: 1;
+    transform: opacity .3s;
+}
+
+.hide{
+    opacity: 0;
+}
